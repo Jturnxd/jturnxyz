@@ -1,0 +1,79 @@
+*{
+    margin:0px;
+    padding: 0px;
+    outline: none;
+    user-select: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    font-family: Ringm;
+    height: 100vh;
+    width:  100vw;
+    cursor: url('../cursors/1.cur.html'), default;
+}
+
+#indicator {
+    position:  fixed;
+    width:  100%;
+    height: 100%;
+    transform: scale(1.5);
+    opacity: 0.5;
+    z-index:  0;
+}
+#Canvas{
+    height:100%;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+
+.links {
+    position:  absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.links p {
+    color:  white;
+    font-size: 45px;
+    padding:  5px 10px;
+    position: relative;
+    text-align: center;
+    margin: 5px 0px;
+    transition: 0.5s cubic-bezier(1, 0.0, 0, 1.0) all;
+    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 100% 0px;
+    cursor: url('../cursors/7.cur.html'), pointer;
+
+}
+.links p:hover {
+    color:  black;
+    z-index: 3;
+    background-size: 100% 100%;
+}
+
+.start {
+    position:  fixed;
+    top: 0;
+    left:  0;
+    background:  black;
+    width:  100%;
+    height:  100%;
+    z-index:  99999;
+    display:  flex;
+    flex-direction:  row;
+    justify-content:  center;
+    align-items:  center;
+}
+
+.start p {
+    font-size:  200px;
+    color:  white;
+}
